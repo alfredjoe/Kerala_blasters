@@ -1,0 +1,327 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #C0CCDA;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1040px;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 0 32px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    border-radius: 100px;
+}
+header .left
+{
+    display: flex;
+}
+header .left ul{
+    display: flex;
+	align-items: center;	
+}
+header .right ul{
+    display: flex;
+	align-items: center;	
+    padding-right: 100px;
+}
+header .left ul li{
+    margin-right: 200px;
+}
+header .left ul li a{
+    display: block;
+    font-size: 20px;
+    color: #F4E200;
+}
+header .left ul li:last-child{
+	margin-right: 0px;
+}
+header .left ul li:first-child{
+	margin-left: 300px;
+}
+header .right ul li:last-child{
+	margin-right: 0px;
+}
+header .right ul li:first-child{
+	margin-left: 200px;
+}
+.right ul li .button{
+    padding: 8px 18px;
+	border-radius: 35px;
+	display: inline-block;
+	background: #F4E200;
+	color: #114FCA;
+}
+header div.right ul li a{
+    display: block;
+    font-size: 20px;
+}
+.right ul li{
+    margin-right: 100px;
+}
+.right ul li .up{
+    padding: 8px 18px;
+	border-radius: 35px;
+	display: inline-block;
+	background: #114FCA;
+	color: #F4E200;
+}
+.main{
+    width: 100%;
+    height: 30vh;
+    background-color: #030303;
+}
+body{
+    background-color: #030303;
+}
+.luna{
+    margin-left: 1100px;
+}
+.elephant{
+    position: absolute;
+    top: -50px;
+}
+.next{
+    height: 310vh;
+    width: 100%;
+    background: url(../images/bg.png)no-repeat;
+    background-size: 2050px;
+}
+footer{
+    padding: 120px 0px;
+    background: #030303;
+    position: relative;
+    z-index: 1;
+    }
+    footer section.wrapper{
+    
+    }
+    footer section.wrapper section.top{
+    display: flex;
+    justify-content: space-between;
+    }
+    footer section.wrapper section.top div.item{
+    width:20% ;
+    margin-right: 200px;
+    }
+    footer section.wrapper section.top div.item.large{
+    width:32% ;
+    }
+    footer section.wrapper section.top div.item:last-child{
+    width: 48%;
+    }
+    footer section.wrapper section.top div.item h1{
+    width: 105px;
+    margin-bottom: 40px;
+    }
+    footer section.wrapper section.top div.item h1 a{
+    width: 100%;
+    display: block;
+    }
+    footer section.wrapper section.top div.item h1 a img{
+    width: 100%;
+    display: block;
+    }
+    footer section.wrapper section.top div.item p{
+    margin-bottom: 20px;
+    color: #c0ccda;
+    }
+    footer section.wrapper section.top div.item h3{
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px;
+    }
+    footer section.wrapper section.top div.item ul{
+    
+    }
+    footer section.wrapper section.top div.item ul li{
+    padding-bottom: 10px;
+    color: #c0ccda;
+    }
+    footer section.wrapper section.top div.item ul li a{
+    padding: 6px 0;
+    display: inline-block;
+    font-size: 15px;
+    color: #c0ccda;
+    }
+    
+    footer section.wrapper{
+        max-width: 1812px;
+    }
+    footer section.wrapper section.top div.item form{
+        position: relative;
+    }
+    footer section.wrapper section.top div.item form input{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 45px;
+    height: 50px;
+    font-size: 16px;
+    display: block;
+    background: #3c4858;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    }
+    footer section.wrapper section.top div.item form button{
+    position: absolute;
+    top:15px ;
+    right: 15px;
+    cursor: pointer;
+    }
+    footer section.wrapper section.top div.item form button img{
+        width: 18px;
+        display: inline-block;
+        transform: rotate(-90deg);
+    }
+    footer section.wrapper section.bottom{
+        margin-top: 120px;
+        display: flex;
+        justify-content:space-between;
+    }
+    footer section.wrapper section.bottom p.left {
+        color: #8492a6;
+        font-size: 16px;
+    }
+    
+    footer section.wrapper section.bottom p.left a{
+        color: #23d3d3;
+    }
+    footer section.wrapper section.bottom p.left a:hover {
+        color: #189191;
+        text-decoration: underline;
+    }
+    footer section.wrapper section.bottom div.social{
+        
+    }
+    footer section.wrapper section.bottom div.social ul{
+        display: flex;
+    
+    }
+    footer section.wrapper section.bottom div.social ul li{
+        margin-right: 15px;
+    }
+    footer section.wrapper section.bottom div.social ul li{
+        margin-right: 0;
+    }
+    footer section.wrapper section.bottom div.social ul li a{
+        display: block;
+    }
+    footer section.wrapper section.bottom div.social ul li a img{
+        width: 96px;
+        display: block;
+        
+    }
