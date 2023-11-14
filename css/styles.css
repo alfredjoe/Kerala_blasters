@@ -424,14 +424,8 @@ body{
              height: auto;
 		  padding-bottom:40px;
 }
-	    .map
-            {
-                display: block;
-		    width:100px;
-		    height:100px;
-            }
 .main{
-    height: 50vh;
+    height: 70vh;
 }
 footer section.wrapper section.top{
     flex-wrap: wrap;
@@ -455,7 +449,7 @@ footer section.wrapper section.bottom{
                  height: auto;
     }
     .main{
-        height: 30vh;
+        height: 50vh;
     }
           }
           @media all and (max-width:360px){
