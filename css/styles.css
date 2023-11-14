@@ -422,11 +422,13 @@ body{
             top: 100px;
              width: 190px;
              height: auto;
-		  margin-bottom:40px;
+		  padding-bottom:40px;
 }
 	    .map
             {
                 display: block;
+		    width:100px;
+		    height:100px;
             }
 .main{
     height: 50vh;
