@@ -1,0 +1,384 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+    color: #1C2C40;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 400;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 400;
+}
+
+a{
+	color: #C0CCDA;
+}
+a:hover,.submit:hover{
+	filter: alpha(opacity = 85);
+	-moz-opacity: 0.85;
+	-khtml-opacity: 0.85;
+	opacity: 0.85;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 400;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width:1040px;
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #C0CCDA;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+::-ms-input-placeholder {
+  color: #C0CCDA;
+}
+
+:root {
+  --main-bg-color: #23D3D3;
+  --main-heading-color:#1C2C40;
+}
+header{
+    height: 140px;
+    background-color: #030303;
+}
+header img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	width: 120px;
+}
+body{
+	background-color: #030303;
+}
+.main{
+	border-radius: 44px;
+	background: #0F0F0F;
+	box-shadow: 0px 4px 4px 0px #C4BD5E inset;
+	height: 150px;
+	display: block;
+}
+.info{
+	font-size: 36px;
+	padding-left: 100px;
+	padding-top: 40px;
+	text-align: center;
+	color: white;
+}
+.time{
+	font-size: 20px;
+	padding-left: 200px;
+	padding-top: 25px;
+}
+.last{
+	padding-right: 100px;
+	padding-left: 200px;
+}
+.inner{
+	padding-top: 15px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 15px;
+}
+.logo{
+width: 100px;
+padding-top: 10px;
+}
+.first{
+	margin-left: 190px;
+}
+.away{
+	box-shadow: 0px 4px 4px 0px #023CA7 inset;
+}
+.main:hover{
+	box-shadow: 0px 4px 4px 0px #fff01e inset;
+}
+.away:hover{
+	box-shadow: 0px 4px 4px 0px #0252e6 inset;
+}
+a{
+	width: 100px;
+  display: block;
+  margin: auto;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 7%;
+	border-radius: 44px;
+}
+button {
+	width: 140px;
+	height: 56px;
+	overflow: hidden;
+	border: none;
+	color: #fff;
+	background: none;
+	position: relative;
+	padding-bottom: 2em;
+  }
+  
+  button > div,button > svg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+  }
+  
+  button:before {
+	content: "";
+	position: absolute;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	transform: scaleX(0);
+	transform-origin: bottom right;
+	background: currentColor;
+	transition: transform 0.25s ease-out;
+  }
+  
+  button:hover:before {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+  
+  button .clone > *,button .text > * {
+	opacity: 1;
+	font-size: 1.3rem;
+	transition: 0.2s;
+	margin-left: 4px;
+  }
+  
+  button .clone > * {
+	transform: translateY(60px);
+  }
+  
+  button:hover .clone > * {
+	opacity: 1;
+	transform: translateY(0px);
+	transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+  button:hover .text > * {
+	opacity: 1;
+	transform: translateY(-60px);
+	transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+  }
+  
+  button:hover .clone > :nth-child(1) {
+	transition-delay: 0.15s;
+  }
+  
+  button:hover .clone > :nth-child(2) {
+	transition-delay: 0.2s;
+  }
+  
+  button:hover .clone > :nth-child(3) {
+	transition-delay: 0.25s;
+  }
+  
+  button:hover .clone > :nth-child(4) {
+	transition-delay: 0.3s;
+  }
+  /* icon style and hover */
+  button svg {
+	width: 20px;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%) rotate(-50deg);
+	transition: 0.2s ease-out;
+  }
+  
+  button:hover svg {
+	transform: translateY(-50%) rotate(-90deg);
+  }
+  body {
+	padding: 0;
+	  margin:0;
+  }
+  main-loader{
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.75);
+  }
+  
+  .main-fader{
+	width:100%;
+	height: 100vh;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.8);
+	.loader {
+	  position: fixed;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  svg {
+		height: 300px;
+		display: block;
+		margin: 0 auto;
+		path {
+		  animation-duration: 1s;
+		  animation-name: pulse;
+		  animation-iteration-count: infinite;
+		  color: #26a380;
+  
+		  &.path-7 {
+			animation-delay: -1s
+		  }
+		  &.path-6 {
+			animation-delay: -.875s
+		  }
+		  &.path-5 {
+			animation-delay: -.75s
+		  }
+		  &.path-4 {
+			animation-delay: -.625s
+		  }
+		  &.path-3 {
+			animation-delay: -.5s
+		  }
+		  &.path-2 {
+			animation-delay: -.375s
+		  }
+		  &.path-1 {
+			animation-delay: -.25s
+		  }
+		  &.path-0 {
+			animation-delay: -.125s
+		  }
+		}
+	  }
+	}
+  }
+  
+  
+  @keyframes pulse {
+	0%     { opacity: .1; }
+	30%    { opacity: .8; }
+	100%   { opacity: .1; }
+  }
+   img{
+        pointer-events: none;
+    }  
+	@media all and (max-width:1680px){
+		.first{
+			margin-left: 40px;
+			height: 100px;
+			margin-top: 30px;
+		}
+		.main{
+			height: 200px;
+		}
+	}
+	@media all and (max-width:1280px){
+		.info{
+padding-left: 10px;
+font-size: 20px;
+		}
+		.last{
+			padding-right: 10px;
+		}
+	}
+	@media all and (max-width:980px){
+		.main{
+			height: auto;
+	
+		}
+	}
+	@media all and (max-width:480px){
+		.logo{
+			display: none;
+		}
+		.first{
+			margin-left: 10px;
+	
+		}
+		.info{
+			padding-left: 40px;
+			font-size: 15px;
+					}
+	}
+	@media all and (max-width:360px){
+		.info{
+			padding-left: 20px;
+			font-size: 15px;
+			}
+	}
